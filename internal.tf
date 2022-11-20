@@ -13,7 +13,7 @@ resource "aws_lb" "internal" {
 
 resource "aws_security_group" "internal" {
   name        = "${var.env}-${var.name}-internal-alb.sg"
-  description = "${var.env}-${var.name}-alb.sg"
+  description = "${var.env}-${var.name}-internal-alb.sg"
   vpc_id      = var.vpc_id
 
 
