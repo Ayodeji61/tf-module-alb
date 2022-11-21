@@ -46,7 +46,7 @@ resource "aws_lb_listener" "main" {
   protocol          = "HTTP"
 
   default_action {
-    type = "redirect"
+    type = "fixed-response"
 
     fixed_response {
       content_type = "text/plain"
