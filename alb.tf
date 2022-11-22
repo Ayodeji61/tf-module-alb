@@ -70,7 +70,7 @@ resource "aws_lb_listener" "public-http" {
     fixed_response {
       port        = "443"
       protocol    = "HTTPS"
-      status_code = "200"
+      status_code = "HTTP_301"
     }
   }
 }
